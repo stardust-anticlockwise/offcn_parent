@@ -1,12 +1,13 @@
 package com.offcn.project.vo.req;
 
 import com.offcn.project.po.TReturn;
+import com.offcn.vo.BaseVoNoToken;
 import lombok.Data;
 
 import java.util.List;
 
 @Data
-public class ProjectRedisStorageVo {
+public class ProjectRedisStorageVo extends BaseVoNoToken {
     private String projectToken;//项目的临时token
     private Integer memberid;//会员id
     private List<Integer> typeids; //项目的分类id

@@ -56,7 +56,8 @@ public class DispathcherController {
             data = allProject.getData();
             redisTemplate.opsForValue().set("projectStr",data,1, TimeUnit.HOURS);
         }
-        model.addAttribute("projectlist",data);
+        System.out.println(data);
+        model.addAttribute("projectList",data);
         return "index";
     }
 }

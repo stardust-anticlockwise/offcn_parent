@@ -1,7 +1,5 @@
-package com.offcn.project.vo.resp;
+package com.offcn.webui.vo.resp;
 
-import com.offcn.project.po.TReturn;
-import com.offcn.vo.BaseVoNoToken;
 import lombok.Data;
 import lombok.ToString;
 
@@ -10,7 +8,7 @@ import java.util.List;
 
 @ToString
 @Data
-public class ProjectDetailVo extends BaseVoNoToken {
+public class ProjectDetailVo implements Serializable {
 
 
     private Integer memberid;// 会员id
@@ -27,9 +25,13 @@ public class ProjectDetailVo extends BaseVoNoToken {
     private String status;//筹资状态  0 - 即将开始， 1 - 众筹中， 2 - 众筹成功， 3 - 众筹失败
 
     private String deploydate;//发布日期
+
     private Long supportmoney = 0L;//支持金额
+
     private Integer supporter = 0;//支持者数量
+
     private Integer completion = 0;//完成度
+
     private Integer follower = 100;//关注者数量
     // 项目头部图片
     private String headerImage;
@@ -37,5 +39,5 @@ public class ProjectDetailVo extends BaseVoNoToken {
     private List<String> detailsImage;
     // 发起人信息：自我介绍，详细自我介绍，联系电话，客服电话
     // 项目回报
-    private List<TReturn> projectReturns;
+    private List<ProjectReturnVo> projectReturns;
 }

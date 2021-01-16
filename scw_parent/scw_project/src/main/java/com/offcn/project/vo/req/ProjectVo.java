@@ -1,11 +1,11 @@
 package com.offcn.project.vo.req;
 
+import com.offcn.vo.BaseVoNoToken;
 import lombok.Data;
 
-import java.io.Serializable;
 
 @Data
-public class ProjectVo implements Serializable {
+public class ProjectVo extends BaseVoNoToken {
 
 // 会员id
          private Integer memberid;
