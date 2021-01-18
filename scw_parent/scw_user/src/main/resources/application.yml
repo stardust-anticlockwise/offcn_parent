@@ -9,7 +9,7 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     filters: stat  #开启监控过滤器
   redis:
-    host: 192.168.1.103
+    host: 10.10.9.194
     port: 6379
     password: 123
   application:

@@ -8,7 +8,7 @@ spring:
     suffix: .html  #构建URL时附加到查看名称的后缀
     cache: false #禁用模板缓存
   redis:
-    host: 192.168.1.103
+    host: 10.10.9.194
     port: 6379
     password: 123
   session:

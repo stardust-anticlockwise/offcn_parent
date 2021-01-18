@@ -11,8 +11,8 @@ spring:
     host: 10.10.9.194
     port: 6379
     password: 123
-application:
-name: SCW-ORDER
+  application:
+   name: SCW-ORDER
 mybatis:
   config-location: classpath:mybatis/mybatis-config.xml
   mapper-locations: classpath:com/offcn/order/mapper/*.xml
